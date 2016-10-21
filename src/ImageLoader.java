@@ -23,7 +23,7 @@ public class ImageLoader extends Thread {
     void ImageLoader() throws IOException {
         InputStream inp = new URL(urll).openStream();
 
-        FileOutputStream fous = new FileOutputStream(getFileName());
+        FileOutputStream fous = new FileOutputStream("C:\\"+getFileName());
 
         //System.out.println(inp.);
         int offset = 1;
